@@ -7,19 +7,35 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:clipToPadding="false"
-        android:background="@drawable/bg"
         tools:context=".MainActivity">
-        <androidx.appcompat.widget.AppCompatTextView
+        <com.chaos.view.PinView
+            android:id="@+id/pin_view"
+            style="@style/PinWidget.PinView"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintTop_toTopOf="parent"
-            android:id="@+id/pin_view"
-            android:layout_marginBottom="50dp"
-            android:textSize="60sp"
-            android:textColor="#ffffff"
-            android:text="" />
+            android:cursorVisible="true"
+            android:inputType="numberPassword"
+            android:textColor="@android:color/white"
+            android:textSize="18sp"
+            android:focusable="false"
+            android:enabled="false"
+            android:textStyle="bold"
+            app:cursorColor="@android:color/transparent"
+            app:cursorWidth="2dp"
+            app:hideLineWhenFilled="true"
+            app:itemCount="4"
+            android:layout_marginTop="20dp"
+            app:itemHeight="48dp"
+            app:itemRadius="4dp"
+            app:itemSpacing="0dp"
+            app:itemWidth="48dp"
+            app:lineColor="#030412"
+            app:lineWidth="2dp"
+            app:viewType="rectangle" />
+
 
         <androidx.appcompat.widget.AppCompatTextView
             android:layout_width="wrap_content"
@@ -120,5 +136,11 @@
                 app:layout_constraintTop_toTopOf="parent" />
 
         </androidx.constraintlayout.widget.ConstraintLayout>
+        <com.sourabhkaushk.safelock.customViews.ImageToVideo
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:id="@+id/animation"
+            app:itv_frames_prefix="anim"
+            app:itv_fps="40"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
 </layout>
