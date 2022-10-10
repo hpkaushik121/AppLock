@@ -1,0 +1,2 @@
+rootProject.name='SafeLock'
+include ':app'

@@ -1,0 +1,124 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:clipToPadding="false"
+        android:background="@drawable/bg"
+        tools:context=".MainActivity">
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:id="@+id/pin_view"
+            android:layout_marginBottom="50dp"
+            android:textSize="60sp"
+            android:textColor="#ffffff"
+            android:text="" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/ll"
+            android:id="@+id/pin_num"
+            android:layout_marginBottom="50dp"
+            android:textColor="#ffffff"
+            android:text="0" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/ll"
+            app:layout_constraintBottom_toBottomOf="parent">
+
+
+            <com.sourabhkaushk.safelock.customViews.CircularSeekBar
+                android:id="@+id/pin_default"
+                android:layout_width="0dp"
+                android:layout_height="0dp"
+                android:layout_gravity="center_horizontal"
+                app:cs_circle_color="@android:color/transparent"
+                app:cs_circle_fill = "@android:color/transparent"
+                app:cs_circle_progress_color = "@android:color/transparent"
+                app:cs_circle_style="round"
+                app:cs_maintain_equal_circle="false"
+                app:cs_pointer_halo_width="@dimen/seekbar_holo_width"
+                app:cs_pointer_stroke_width="24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent" />
+
+            <com.sourabhkaushk.safelock.customViews.CircularSeekBar
+                android:id="@+id/pin_1"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                app:cs_circle_stroke_width="2dp"
+                app:cs_circle_style="butt"
+                app:cs_maintain_equal_circle="false"
+                app:cs_negative_enabled="false"
+                app:cs_pointer_halo_width="@dimen/seekbar_holo_width"
+                app:cs_pointer_stroke_width="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.sourabhkaushk.safelock.customViews.CircularSeekBar
+                android:id="@+id/pin_2"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_gravity="center_horizontal"
+                app:cs_circle_stroke_width="2dp"
+                app:cs_circle_style="butt"
+                app:cs_maintain_equal_circle="false"
+                app:cs_negative_enabled="true"
+                app:cs_pointer_halo_width="@dimen/seekbar_holo_width"
+                app:cs_pointer_stroke_width="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.sourabhkaushk.safelock.customViews.CircularSeekBar
+                android:id="@+id/pin_3"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_horizontal"
+                app:cs_circle_stroke_width="2dp"
+                app:cs_circle_style="butt"
+                app:cs_maintain_equal_circle="false"
+                app:cs_negative_enabled="true"
+                app:cs_pointer_halo_width="@dimen/seekbar_holo_width"
+                app:cs_pointer_stroke_width="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.sourabhkaushk.safelock.customViews.CircularSeekBar
+                android:id="@+id/pin_4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_gravity="center_horizontal"
+                app:cs_circle_stroke_width="2dp"
+                app:cs_circle_style="butt"
+                app:cs_maintain_equal_circle="false"
+                app:cs_negative_enabled="true"
+                app:cs_pointer_halo_width="@dimen/seekbar_holo_width"
+                app:cs_pointer_stroke_width="0dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
